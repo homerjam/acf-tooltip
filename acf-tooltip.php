@@ -103,10 +103,10 @@ class dhz_acf_plugin_tooltip {
 		wp_register_style( 'acf-tooltip-qTip2-style', "{$url}assets/vendor/qtip/jquery.qtip.min.css", false, '3.0.3');
 
 		// register qTip2 script
-		wp_register_script( 'acf-tooltip-qTip2-script', "{$url}/assets/vendor/qtip/jquery.qtip.min.js", array('jquery'), '3.0.3', true );
+		wp_register_script( 'acf-tooltip-qTip2-script', "{$url}assets/vendor/qtip/jquery.qtip.min.js", array('jquery'), '3.0.3', true );
 
 		// register ACF Tooltip script
-		wp_register_script( 'acf-tooltip-script', "{$url}/assets/js/acf-tooltip.js", array('jquery'), $version, true );
+		wp_register_script( 'acf-tooltip-script', "{$url}assets/js/acf-tooltip.js", array('jquery'), $version, true );
 
 		$acf_tooltip_fieldeditor = apply_filters( "acf/tooltip/fieldeditor", FALSE );
 		$acf_tooltip_css = apply_filters( "acf/tooltip/css", "" );
